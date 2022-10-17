@@ -6,7 +6,7 @@
 import scrapy
 
 
-class QuotesSpiderItem(scrapy.Item):
+class LoginSpiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    quote = scrapy.Field()
+    pass

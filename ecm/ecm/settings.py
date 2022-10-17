@@ -1,4 +1,4 @@
-# Scrapy settings for quotes_spider project
+# Scrapy settings for ecm project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'quotes_spider'
+BOT_NAME = 'ecm'
 
-SPIDER_MODULES = ['quotes_spider.spiders']
-NEWSPIDER_MODULE = 'quotes_spider.spiders'
+SPIDER_MODULES = ['ecm.spiders']
+NEWSPIDER_MODULE = 'ecm.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'quotes_spider (+http://www.yourdomain.com)'
+#USER_AGENT = 'ecm (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'quotes_spider.middlewares.QuotesSpiderSpiderMiddleware': 543,
+#    'ecm.middlewares.EcmSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'quotes_spider.middlewares.QuotesSpiderDownloaderMiddleware': 543,
+#    'ecm.middlewares.EcmDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -62,9 +62,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'quotes_spider.pipelines.QuotesSpiderPipeline': 300,
-}
+#ITEM_PIPELINES = {
+#    'ecm.pipelines.EcmPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
